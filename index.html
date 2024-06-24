@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Links CSS's -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="/CSS/styles.css" />
+
+    <title>Clínica Odontológica</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo"><span>Sua</span>Clínica</div>
+      <div class="navbar-list">
+        <ul class="list">
+          <li class="list-item">
+            <a class="list-link" href="#">INÍCIO</a>
+          </li>
+          <li class="list-item">
+            <a class="list-link" href="#">SERVIÇOS</a>
+          </li>
+          <li class="list-item">
+            <a class="list-link" href="#">SOBRE NÓS</a>
+          </li>
+          <li class="list-item">
+            <a class="list-link" href="#">CONTATOS</a>
+          </li>
+        </ul>
+      </div>
+      <div class="consulta" id="consulta">
+        <i class="fa-solid fa-calendar-days"></i> Marque uma consulta
+      </div>
+    </nav>
+
+    <header class="bg">
+      <div class="container-fluid">
+        <div class="desc-header">
+          <span>Bem-vindo</span>
+          <h1>Cuidando de você e do seu sorriso.</h1>
+          <p>Aqui você vai receber o máximo de cuidado e atenção. Sempre colocando o seu sorriso em prioridade para que você volte a sorrir.</p>
+          <button type="submit" class="button-header">Saiba mais <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </header>
+
+    <main class="sections">
+    
+      <section class="service">
+        <div class="container-fluid">
+          <div class="container-service">
+            <span class="sub-title">Serviços</span>
+          <h1 class="title">O que nós oferecemos</h1>
+          <div class="underline"></div>
+          </div>
+          <div class="cards-service">
+            <div class="card">
+              <img src="/assets/tooth.png" alt="">
+              <h1>Limpeza de dente</h1>
+              <p></p>
+            </div>
+            <div class="card">
+              <img src="/assets/dental-insurance.png" alt="Limpeza dental">
+              <h1>Branqueamento</h1>
+              <p></p>
+            </div>
+            <div class="card">
+              <img src="/assets/braces.png" alt="">
+              <h1>Aparelho dental</h1>
+              <p></p>
+            </div>
+          </div>
+          <div class="cards-service">
+            <div class="card">
+              <img src="/assets/implant.png" alt="">
+              <h1>Implantes</h1>
+            </div>
+            <div class="card">
+              <img src="/assets/tooth-filling.png" alt="">
+              <h1>Obturações dentárias</h1>
+            </div>
+            <div class="card">
+              <img src="/assets/straightens-teeth.png" alt="">
+              <h1>Ortodontia</h1>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="button-service" id="services">Saber mais <i class="fa-solid fa-arrow-right"></i></button>
+      </section>
+
+      <section class="beneficios">
+        <div class="container-fluid">
+          <div class="container-beneficio">
+            <div class="cards-beneficios">
+              <img src="/assets/stars.png" alt="satisfação">
+              <h1>Satisfação Garantida</h1>
+              <p>Aqui nossa dedicação vai do início ao fim de seu atendimento.</p>
+            </div>
+            <div class="cards-beneficios">
+              <img class="img-beneficio" src="/assets/dentist-tools.png" alt="satisfação">
+              <h1>Tecnologia Incrível</h1>
+              <p>Ferramentas totalmente limpas e esterializadas para que tudo ocorra bem!</p>
+            </div>
+            <div class="cards-beneficios">
+              <img class="img-beneficio" src="/assets/dentist.png" alt="satisfação">
+              <h1>Dentistas Profissionais</h1>
+              <p>Temos os melhores dentistas da região para que você possa ter um melhor atendimeto.</p>
+            </div>
+          </div>
+          <div class="container-consulta">
+            <span class="sub-title">O que você acha</span>
+            <h1 class="title-beneficio">Vamos marcar um consulta?</h1>
+            <div class="underline"></div>
+          </div>
+
+          <div class="container-form">
+            <form>
+              <input type="text" id="name" placeholder="Nome Completo">
+              <input type="tel" id="whatsapp" placeholder="Whatsapp">
+              <select name="servico" id="servico">
+                <option value="">Escolha o serviço</option>
+                <option value="clareamento">Clareamento dos dentes</option>
+                <option value="implante">Implantes</option>
+                <option value="odontologia">Odontologia</option>
+                <option value="preenchimento">Preenchimento dentário</option>
+                <option value="coroa">Coroa dentária</option>
+              </select>
+              <input type="date" id="date" >
+              <button type="submit" class="btn-form">Marcar Consulta <i class="fa-solid fa-arrow-right"></i></button>
+            </form>
+            <img src="/assets/dentista-de-confianca.jpg" alt="">
+          </div>
+        </div>
+      </section>
+
+      <section class="contatos" id="contatos">
+        <div class="container-fluid">
+          <div class="container-contato">
+            <div>
+              <h1>Precisa de ajuda?</h1>
+              <p>Por favor, ligue para nosso atendimento ao cliente ou marque uma consulta com nossos médicos.</p>
+              <button type="button" class="btn btn-contato"><i class="fa-solid fa-phone"></i> Contate-nos</button>
+            </div>
+            <div class="img-contato">
+              <img src="/assets/dentista.png" alt="dentista">
+            </div>
+          </div>
+        </div>  
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="container-footer">
+          <div class="footer-1">
+            <h3>Contatos</h3>
+            <a href="#"><i class="fa-solid fa-location-dot"></i> Rua Edvanir Palma 37A - Colubandê</a> <br />
+            <a href="#"><i class="fa-solid fa-phone"></i> (21) 98852 - 6928</a> <br />
+            <a href="#"><i class="fa-solid fa-envelope"></i>aguiar.programação@gmail.com</a>
+          </div>
+          <div class="footer-2">
+            <h3>Política</h3>
+            <a href="#">Política de privacidade</a> <br />
+            <a href="#">Termos de uso</a>
+          </div>
+          <div class="footer-3">
+            <h3>Marque uma consulta</h3>
+            <p>Obter um diagnóstico preciso pode ser uma das experiências mais impactantes que você pode ter.</p>
+            <button class="btn btn-marcar" type="button"><i class="fa-solid fa-phone"></i> (21) 98852 - 6928</button>
+          </div>
+        </div>
+        <hr />
+        <div class="abaixo-hr">
+          <div class="logo"><span>Sua</span>Logo</div>
+          <p>Copyright &copy 2024. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
