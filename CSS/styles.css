@@ -14,6 +14,7 @@ html, body{
   --dark-color: #2c2c2c;
 }
 
+/*--------------------------------------------------------- NAVBAR SECTION ---------------------------------------------------------*/
 .navbar{
   background-color: var(--primary-color);
   display: flex;
@@ -63,19 +64,19 @@ html, body{
 }
 
 .consulta:hover{
-  animation: balance 2s infinite;
+  animation: balance 0.5s infinite alternate;
 }
 
 @keyframes balance{
   from {
-    transform: translateX(-5px);
+    transform: translateY(0);
   }
   to {
-    transform: translateX(20px);
+    transform: translateY(-8px);
   }
 }
 
-/*----- Header Section -----*/
+/*--------------------------------------------------------- Header Section ---------------------------------------------------------*/
 .bg{
   display: flex;
   align-items: center;
@@ -113,22 +114,25 @@ html, body{
 
 .button-header{
   background-color: var(--primary-color);
-  padding: 20px 40px;
+  padding: 20px;
+  width: 29%;
   border: none;
-  border-radius: 50px;
+  border-radius: 25px;
   font-size: 20px;
   font-weight: 700;
   color: var(--secondary-color);
   transition: all 0.5s;
-  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
 }
 
-.button-header i:hover, .button-header:hover{
-  transition: all 1s;
-  transform: translateX(30px);
+.button-header:hover{
+  width: 40%;
 }
 
-/*----- Service Section ------*/
+/*--------------------------------------------------------- Service Section ---------------------------------------------------------*/
 .service{
   padding-top: 2rem;
   display: flex;
@@ -188,7 +192,7 @@ html, body{
 }
 
 .card:hover,
-.card:focus{
+.card:hover{
   background-color: var(--primary-color);
   color: white;
   box-shadow: 0px 0px 15px 5px #888;
@@ -199,11 +203,13 @@ html, body{
   background-color: var(--secondary-color);
   padding: 15px;
   border-radius: 50px;
+  transition: all 0.4s;
 }
 
-.card img:hover{
-  background-color: var(--dark-primary-color);
+.card:hover img{
+  filter: invert(1);
 }
+
 
 .card h1{
   font-size: 35px;
@@ -230,7 +236,7 @@ html, body{
   box-shadow: 0px 3px 5px 5px #999;
 }
 
-/*----- Beneficios Section -----*/
+/*--------------------------------------------------------- Beneficios Section ---------------------------------------------------------*/
 .beneficios{
   padding-top: 30px;
   background: linear-gradient(var(--dark-primary-color), var(--primary-color));
@@ -306,11 +312,12 @@ form{
   gap: 30px;
   margin-top: 80px;
   overflow: hidden;
+  color: #FFF;
 }
 
 form input, select{
   height: 30px;
-  color: white;
+  color: #FFF;
   background-color: transparent;
   border: none;
   border-bottom: solid 1px ;
@@ -328,17 +335,26 @@ select option{
 }
 
 .btn-form{
-  padding: 10px 25px;
+  background-color: var(--dark-primary-color);
+  padding: 20px;
+  width: 60%;
   border: none;
   border-radius: 25px;
-  background: var(--secondary-color);
-  font-size: 18px;
-  font-weight: bold;
-  color: var(--primary-color);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--secondary-color);
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   cursor: pointer;
 }
 
-/*----- Contatos Section -----*/
+.btn-form:hover{
+  width: 80%;
+}
+
+/*--------------------------------------------------------- Contatos Section ---------------------------------------------------------*/
 .container-contato{
   display: flex;
   align-items: center;
@@ -375,6 +391,7 @@ select option{
   transform: translateX(20px);
 }
 
+/*--------------------------------------------------------- FOOTER SECTION ---------------------------------------------------------*/
 .footer{
   background-color: var(--primary-color);
 }
